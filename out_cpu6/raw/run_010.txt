@@ -1,0 +1,140 @@
+Initializing random number generator, seed 17583561000687551056
+CMDLINE: "/home/janahaikel/openairinterface5g/cmake_targets/ran_build/build/ldpctest" "-l" "8448" "-n" "2000" "-s" "3" "-i" "5" 
+[NR_PHY] loading LDPC version 
+[0m[NR_PHY] loading LDPC version _orig
+[0mhandling optarg l
+handling optarg n
+handling optarg s
+handling optarg i
+block length 8448: 
+n_trials 2000: 
+SNR0 3.000000: 
+loading 
+Linear SNR: 5 0.665087, 1/3, Kprime 8448
+ldpc_test: codeword_length 8448, n_segments 1, Kprime 8448, BG 1, Zc 384, Kb 22
+nrows: 46
+no_punctured_columns: 0
+removed_bit: 0
+To: 26112
+number of undecoded bits: 25344
+
+
+SNR 3.000000, BLER 0.032500 (65/2000)
+SNR 3.000000, BER 0.000004 (65/2000)
+SNR 3.000000, Uncoded BER 0.124343 (65/2000)
+SNR 3.000000, Mean iterations: 4.000000
+SNR 3.000000, Std iterations: 0.000000
+SNR 3.000000, Max iterations: 4
+
+Encoding time mean:          20.905 us
+Encoding time std:           3.410 us
+Encoding time max:          72.117 us
+
+Decoding time mean:         129.344 us
+Decoding time std:           8.361 us
+Decoding time max:         269.962 us
+Linear SNR: 5 0.680579, 1/3, Kprime 8448
+ldpc_test: codeword_length 8448, n_segments 1, Kprime 8448, BG 1, Zc 384, Kb 22
+nrows: 46
+no_punctured_columns: 0
+removed_bit: 0
+To: 26112
+number of undecoded bits: 25344
+
+
+SNR 3.100000, BLER 0.007500 (15/2000)
+SNR 3.100000, BER 0.000001 (15/2000)
+SNR 3.100000, Uncoded BER 0.121685 (15/2000)
+SNR 3.100000, Mean iterations: 4.000000
+SNR 3.100000, Std iterations: 0.000000
+SNR 3.100000, Max iterations: 4
+
+Encoding time mean:          20.657 us
+Encoding time std:           1.360 us
+Encoding time max:          42.956 us
+
+Decoding time mean:         128.848 us
+Decoding time std:           5.583 us
+Decoding time max:         193.610 us
+Linear SNR: 5 0.696432, 1/3, Kprime 8448
+ldpc_test: codeword_length 8448, n_segments 1, Kprime 8448, BG 1, Zc 384, Kb 22
+nrows: 46
+no_punctured_columns: 0
+removed_bit: 0
+To: 26112
+number of undecoded bits: 25344
+
+
+SNR 3.200000, BLER 0.001500 (3/2000)
+SNR 3.200000, BER 0.000000 (3/2000)
+SNR 3.200000, Uncoded BER 0.118938 (3/2000)
+SNR 3.200000, Mean iterations: 4.000000
+SNR 3.200000, Std iterations: 0.000000
+SNR 3.200000, Max iterations: 4
+
+Encoding time mean:          20.695 us
+Encoding time std:           2.622 us
+Encoding time max:         124.833 us
+
+Decoding time mean:         129.076 us
+Decoding time std:           6.187 us
+Decoding time max:         207.476 us
+Linear SNR: 5 0.712654, 1/3, Kprime 8448
+ldpc_test: codeword_length 8448, n_segments 1, Kprime 8448, BG 1, Zc 384, Kb 22
+nrows: 46
+no_punctured_columns: 0
+removed_bit: 0
+To: 26112
+number of undecoded bits: 25344
+
+
+SNR 3.300000, BLER 0.000000 (0/2000)
+SNR 3.300000, BER 0.000000 (0/2000)
+SNR 3.300000, Uncoded BER 0.116361 (0/2000)
+SNR 3.300000, Mean iterations: 4.000000
+SNR 3.300000, Std iterations: 0.000000
+SNR 3.300000, Max iterations: 4
+
+Encoding time mean:          20.750 us
+Encoding time std:           1.553 us
+Encoding time max:          46.742 us
+
+Decoding time mean:         129.897 us
+Decoding time std:           7.204 us
+Decoding time max:         193.091 us
+             ldpc_encoder:          656.459 us;        1636.978 us;          42.058 us;            2000;
+       ldpc_encoder_optim:           20.905 us;          72.117 us;           3.410 us;            2000;
+ldpc_encoder_optim(input):            0.224 us;           1.042 us;           0.031 us;            2000;
+ldpc_encoder_optim(parity):           19.733 us;          66.684 us;           3.231 us;            2000;
+ldpc_encoder_optim(output):            0.449 us;           2.763 us;           0.093 us;            2000;
+             ldpc_decoder:          129.344 us;         269.962 us;           8.361 us;            2000;
+   cnProc (per iteration):            8.037 us;          37.112 us;           0.682 us;           10000;
+cn2bnProcBuf (per iteration):            3.435 us;          25.219 us;           0.360 us;           10000;
+bn2cnProcBuf (per iteration):            3.445 us;          26.106 us;           0.564 us;            2000;
+             ldpc_encoder:          651.645 us;         913.279 us;          21.863 us;            2000;
+       ldpc_encoder_optim:           20.657 us;          42.956 us;           1.360 us;            2000;
+ldpc_encoder_optim(input):            0.223 us;           8.018 us;           0.175 us;            2000;
+ldpc_encoder_optim(parity):           19.481 us;          39.202 us;           1.201 us;            2000;
+ldpc_encoder_optim(output):            0.436 us;           4.292 us;           0.092 us;            2000;
+             ldpc_decoder:          128.847 us;         193.610 us;           5.583 us;            2000;
+   cnProc (per iteration):            7.974 us;          26.214 us;           0.571 us;           10000;
+cn2bnProcBuf (per iteration):            3.484 us;          11.156 us;           0.231 us;           10000;
+bn2cnProcBuf (per iteration):            3.382 us;          13.086 us;           0.293 us;            2000;
+             ldpc_encoder:          653.230 us;        1255.161 us;          26.444 us;            2000;
+       ldpc_encoder_optim:           20.695 us;         124.833 us;           2.622 us;            2000;
+ldpc_encoder_optim(input):            0.220 us;           1.341 us;           0.029 us;            2000;
+ldpc_encoder_optim(parity):           19.539 us;         117.730 us;           2.478 us;            2000;
+ldpc_encoder_optim(output):            0.438 us;           2.623 us;           0.062 us;            2000;
+             ldpc_decoder:          129.076 us;         207.476 us;           6.187 us;            2000;
+   cnProc (per iteration):            7.975 us;          30.282 us;           0.559 us;           10000;
+cn2bnProcBuf (per iteration):            3.434 us;          50.165 us;           0.586 us;           10000;
+bn2cnProcBuf (per iteration):            3.429 us;          27.324 us;           0.592 us;            2000;
+             ldpc_encoder:          655.023 us;         919.720 us;          28.300 us;            2000;
+       ldpc_encoder_optim:           20.750 us;          46.742 us;           1.553 us;            2000;
+ldpc_encoder_optim(input):            0.222 us;           0.409 us;           0.017 us;            2000;
+ldpc_encoder_optim(parity):           19.585 us;          44.566 us;           1.447 us;            2000;
+ldpc_encoder_optim(output):            0.447 us;           2.025 us;           0.073 us;            2000;
+             ldpc_decoder:          129.896 us;         193.091 us;           7.204 us;            2000;
+   cnProc (per iteration):            8.021 us;          53.486 us;           0.684 us;           10000;
+cn2bnProcBuf (per iteration):            3.394 us;          18.657 us;           0.290 us;           10000;
+bn2cnProcBuf (per iteration):            3.459 us;          16.959 us;           0.360 us;            2000;

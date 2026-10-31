@@ -1,0 +1,6781 @@
+{
+ "manifest": {
+  "kernel": "7.2.11-200.fc44.x86_64",
+  "os": "PRETTY_NAME=\"Fedora Linux 44 (Workstation Edition)\"",
+  "cpu_model": "Model name:                              Intel(R) Core(TM) Ultra 5 225H",
+  "pinned_cpu": 2,
+  "p_cores": "0-3",
+  "e_cores": "4-11",
+  "epp": "performance",
+  "governor": "performance",
+  "scaling_driver": "intel_pstate",
+  "scaling_max_khz": "4900000",
+  "no_turbo": "0",
+  "power_profile": null,
+  "mem_speed": null,
+  "compiler": "gcc (GCC) 16.2.1 20260819 (Red Hat 16.2.1-2)",
+  "build_type": "CMAKE_BUILD_TYPE:STRING=\nCMAKE_BUILD_TYPE-STRINGS:INTERNAL=Debug;Release;RelWithDebInfo;MinSizeRel",
+  "git_commit": "cfee4c20b45ac1cf6d455d3f01bb3e00200438b0",
+  "git_dirty_files": "0",
+  "date": "2026-10-30T16:10:01+0200"
+ },
+ "cmd": [
+  "taskset",
+  "-c",
+  "2",
+  "~/openairinterface5g/cmake_targets/ran_build/build/ldpctest",
+  "-l",
+  "8448",
+  "-n",
+  "2000",
+  "-s",
+  "3",
+  "-i",
+  "5"
+ ],
+ "summary": {
+  "runs_used": 19,
+  "ldpc_decoder": {
+   "median_of_means_us": 96.12,
+   "cov_of_means": 0.015901614658747457,
+   "min_mean_us": 94.464,
+   "max_mean_us": 99.17,
+   "worst_single_sample_us": 570.204
+  },
+  "ldpc_encoder": {
+   "median_of_means_us": 426.775,
+   "cov_of_means": 0.018489126710456945,
+   "min_mean_us": 421.042,
+   "max_mean_us": 446.363,
+   "worst_single_sample_us": 2454.275
+  },
+  "ldpc_encoder_optim": {
+   "median_of_means_us": 13.761,
+   "cov_of_means": 0.013928799531706913,
+   "min_mean_us": 13.61,
+   "max_mean_us": 14.33,
+   "worst_single_sample_us": 51.537
+  }
+ },
+ "runs": [
+  {
+   "run": 0,
+   "discarded": true,
+   "returncode": 0,
+   "wall_s": 8.110124404996895,
+   "freq_khz_before": "2863193",
+   "freq_khz_after": "4845492",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.024,
+     "errors": 48,
+     "trials": 2000,
+     "ber": 3e-06,
+     "uncoded_ber": 0.12442,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 422.275,
+       "max_us": 611.256,
+       "std_us": 22.13,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.687,
+       "max_us": 22.147,
+       "std_us": 5.341,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.198,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.053,
+       "max_us": 21.235,
+       "std_us": 5.199,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.271,
+       "max_us": 0.652,
+       "std_us": 0.026,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.867,
+       "max_us": 144.69,
+       "std_us": 6.263,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.642,
+       "max_us": 12.598,
+       "std_us": 0.362,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.91,
+       "max_us": 8.988,
+       "std_us": 0.278,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.567,
+       "max_us": 12.365,
+       "std_us": 0.341,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.0095,
+     "errors": 19,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121742,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 428.373,
+       "max_us": 558.383,
+       "std_us": 26.105,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.665,
+       "max_us": 18.751,
+       "std_us": 0.951,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.19,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.031,
+       "max_us": 18.001,
+       "std_us": 0.907,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.273,
+       "max_us": 0.488,
+       "std_us": 0.021,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.885,
+       "max_us": 134.181,
+       "std_us": 6.767,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.672,
+       "max_us": 10.569,
+       "std_us": 0.387,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.943,
+       "max_us": 14.064,
+       "std_us": 0.351,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.588,
+       "max_us": 9.132,
+       "std_us": 0.321,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.119062,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 441.587,
+       "max_us": 593.561,
+       "std_us": 31.418,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 14.138,
+       "max_us": 21.499,
+       "std_us": 1.131,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.139,
+       "max_us": 0.202,
+       "std_us": 0.012,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.485,
+       "max_us": 20.666,
+       "std_us": 1.08,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.281,
+       "max_us": 0.395,
+       "std_us": 0.023,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 101.577,
+       "max_us": 138.446,
+       "std_us": 8.025,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.807,
+       "max_us": 14.629,
+       "std_us": 0.429,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 4.083,
+       "max_us": 36.593,
+       "std_us": 0.511,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.712,
+       "max_us": 10.353,
+       "std_us": 0.362,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116302,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 418.27,
+       "max_us": 759.25,
+       "std_us": 16.395,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.433,
+       "max_us": 20.792,
+       "std_us": 0.667,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.132,
+       "max_us": 0.182,
+       "std_us": 0.007,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.815,
+       "max_us": 20.071,
+       "std_us": 0.641,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.268,
+       "max_us": 1.921,
+       "std_us": 0.045,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.884,
+       "max_us": 183.717,
+       "std_us": 5.176,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.614,
+       "max_us": 13.94,
+       "std_us": 0.368,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.883,
+       "max_us": 11.996,
+       "std_us": 0.287,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.537,
+       "max_us": 12.919,
+       "std_us": 0.329,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 1,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 8.437909202999435,
+   "freq_khz_before": "4845492",
+   "freq_khz_after": "4591143",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.0405,
+     "errors": 81,
+     "trials": 2000,
+     "ber": 5e-06,
+     "uncoded_ber": 0.124353,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 437.368,
+       "max_us": 570.068,
+       "std_us": 25.462,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 14.028,
+       "max_us": 21.915,
+       "std_us": 4.579,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.138,
+       "max_us": 0.223,
+       "std_us": 0.011,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.353,
+       "max_us": 21.126,
+       "std_us": 4.46,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.296,
+       "max_us": 1.795,
+       "std_us": 0.043,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.168,
+       "max_us": 142.374,
+       "std_us": 6.578,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.749,
+       "max_us": 11.283,
+       "std_us": 0.387,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.821,
+       "max_us": 15.267,
+       "std_us": 0.343,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.415,
+       "max_us": 9.736,
+       "std_us": 0.28,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.0065,
+     "errors": 13,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121679,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 446.823,
+       "max_us": 600.062,
+       "std_us": 25.52,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 14.276,
+       "max_us": 26.92,
+       "std_us": 1.007,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.14,
+       "max_us": 0.219,
+       "std_us": 0.013,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.593,
+       "max_us": 26.264,
+       "std_us": 0.963,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.304,
+       "max_us": 4.91,
+       "std_us": 0.106,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 99.988,
+       "max_us": 138.805,
+       "std_us": 6.232,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.859,
+       "max_us": 14.311,
+       "std_us": 0.378,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.922,
+       "max_us": 13.273,
+       "std_us": 0.326,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.512,
+       "max_us": 9.123,
+       "std_us": 0.286,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.0025,
+     "errors": 5,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.119008,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 454.626,
+       "max_us": 1122.801,
+       "std_us": 30.28,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 14.522,
+       "max_us": 35.92,
+       "std_us": 1.154,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.144,
+       "max_us": 0.356,
+       "std_us": 0.011,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.828,
+       "max_us": 34.138,
+       "std_us": 1.108,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.306,
+       "max_us": 0.748,
+       "std_us": 0.025,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 102.1,
+       "max_us": 515.2,
+       "std_us": 11.451,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.92,
+       "max_us": 22.771,
+       "std_us": 0.528,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.993,
+       "max_us": 24.184,
+       "std_us": 0.514,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.577,
+       "max_us": 20.469,
+       "std_us": 0.503,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116275,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 448.179,
+       "max_us": 576.764,
+       "std_us": 23.077,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 14.316,
+       "max_us": 24.077,
+       "std_us": 0.935,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.142,
+       "max_us": 0.192,
+       "std_us": 0.009,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.634,
+       "max_us": 23.375,
+       "std_us": 0.896,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.303,
+       "max_us": 3.258,
+       "std_us": 0.069,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 100.948,
+       "max_us": 138.979,
+       "std_us": 5.825,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.865,
+       "max_us": 14.624,
+       "std_us": 0.372,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.934,
+       "max_us": 21.594,
+       "std_us": 0.328,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.523,
+       "max_us": 8.177,
+       "std_us": 0.282,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 2,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 9.988696102998802,
+   "freq_khz_before": "4591143",
+   "freq_khz_after": "4478901",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.042,
+     "errors": 84,
+     "trials": 2000,
+     "ber": 5e-06,
+     "uncoded_ber": 0.12445,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 422.603,
+       "max_us": 539.871,
+       "std_us": 17.456,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.644,
+       "max_us": 24.309,
+       "std_us": 5.051,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.221,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.993,
+       "max_us": 23.052,
+       "std_us": 4.94,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.274,
+       "max_us": 1.184,
+       "std_us": 0.032,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.564,
+       "max_us": 125.289,
+       "std_us": 4.934,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.635,
+       "max_us": 16.509,
+       "std_us": 0.348,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.744,
+       "max_us": 15.434,
+       "std_us": 0.325,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.31,
+       "max_us": 13.479,
+       "std_us": 0.304,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.0105,
+     "errors": 21,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121735,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 422.281,
+       "max_us": 625.578,
+       "std_us": 17.988,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.448,
+       "max_us": 31.138,
+       "std_us": 0.816,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.197,
+       "std_us": 0.009,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.809,
+       "max_us": 30.531,
+       "std_us": 0.785,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.272,
+       "max_us": 0.446,
+       "std_us": 0.016,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.332,
+       "max_us": 196.299,
+       "std_us": 5.038,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.618,
+       "max_us": 35.6,
+       "std_us": 0.483,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.727,
+       "max_us": 15.329,
+       "std_us": 0.313,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.291,
+       "max_us": 7.571,
+       "std_us": 0.223,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.0035,
+     "errors": 7,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118956,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 425.236,
+       "max_us": 608.48,
+       "std_us": 19.915,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.486,
+       "max_us": 22.329,
+       "std_us": 0.814,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.199,
+       "std_us": 0.009,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.851,
+       "max_us": 21.668,
+       "std_us": 0.784,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.273,
+       "max_us": 0.681,
+       "std_us": 0.019,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.885,
+       "max_us": 137.385,
+       "std_us": 5.0,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.627,
+       "max_us": 14.232,
+       "std_us": 0.359,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.733,
+       "max_us": 17.819,
+       "std_us": 0.281,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.316,
+       "max_us": 14.712,
+       "std_us": 0.408,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.001,
+     "errors": 2,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116315,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 424.485,
+       "max_us": 1177.282,
+       "std_us": 28.698,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.563,
+       "max_us": 162.098,
+       "std_us": 3.52,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 1.599,
+       "std_us": 0.034,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.925,
+       "max_us": 154.505,
+       "std_us": 3.365,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.276,
+       "max_us": 3.515,
+       "std_us": 0.103,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.346,
+       "max_us": 421.98,
+       "std_us": 9.095,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.623,
+       "max_us": 22.759,
+       "std_us": 0.426,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.741,
+       "max_us": 23.452,
+       "std_us": 0.395,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.319,
+       "max_us": 20.59,
+       "std_us": 0.549,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.11356,
+     "iterations_mean": 3.999,
+     "iterations_std": 0.031607,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 424.579,
+       "max_us": 555.479,
+       "std_us": 22.322,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.572,
+       "max_us": 38.917,
+       "std_us": 1.065,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.199,
+       "std_us": 0.009,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.938,
+       "max_us": 38.182,
+       "std_us": 1.034,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.275,
+       "max_us": 1.276,
+       "std_us": 0.029,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.004,
+       "max_us": 135.665,
+       "std_us": 5.779,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.641,
+       "max_us": 13.256,
+       "std_us": 0.348,
+       "count": 9998
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.758,
+       "max_us": 11.375,
+       "std_us": 0.272,
+       "count": 9998
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.316,
+       "max_us": 6.312,
+       "std_us": 0.218,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 3,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 10.274724381000851,
+   "freq_khz_before": "4478901",
+   "freq_khz_after": "4900098",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.0315,
+     "errors": 63,
+     "trials": 2000,
+     "ber": 4e-06,
+     "uncoded_ber": 0.12445,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 446.363,
+       "max_us": 552.274,
+       "std_us": 18.305,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 14.33,
+       "max_us": 26.015,
+       "std_us": 5.303,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.143,
+       "max_us": 3.444,
+       "std_us": 0.074,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.657,
+       "max_us": 25.355,
+       "std_us": 5.103,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.288,
+       "max_us": 0.615,
+       "std_us": 0.024,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 99.17,
+       "max_us": 126.607,
+       "std_us": 4.878,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.844,
+       "max_us": 31.893,
+       "std_us": 0.443,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.886,
+       "max_us": 12.723,
+       "std_us": 0.269,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.508,
+       "max_us": 12.07,
+       "std_us": 0.304,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.007,
+     "errors": 14,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121701,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 435.907,
+       "max_us": 3325.311,
+       "std_us": 70.41,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.879,
+       "max_us": 83.032,
+       "std_us": 1.832,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.138,
+       "max_us": 0.807,
+       "std_us": 0.018,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.226,
+       "max_us": 79.029,
+       "std_us": 1.746,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.281,
+       "max_us": 1.67,
+       "std_us": 0.045,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.037,
+       "max_us": 195.085,
+       "std_us": 6.881,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.729,
+       "max_us": 12.566,
+       "std_us": 0.384,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.802,
+       "max_us": 37.756,
+       "std_us": 0.498,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.415,
+       "max_us": 6.945,
+       "std_us": 0.269,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.0035,
+     "errors": 7,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118939,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 418.754,
+       "max_us": 535.141,
+       "std_us": 15.765,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.374,
+       "max_us": 17.601,
+       "std_us": 0.604,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.133,
+       "max_us": 0.191,
+       "std_us": 0.007,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.75,
+       "max_us": 16.976,
+       "std_us": 0.579,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.27,
+       "max_us": 0.355,
+       "std_us": 0.014,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.159,
+       "max_us": 124.536,
+       "std_us": 4.679,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.603,
+       "max_us": 14.866,
+       "std_us": 0.325,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.681,
+       "max_us": 13.736,
+       "std_us": 0.305,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.313,
+       "max_us": 8.68,
+       "std_us": 0.225,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116342,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 429.253,
+       "max_us": 547.054,
+       "std_us": 21.886,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.699,
+       "max_us": 20.576,
+       "std_us": 0.823,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.137,
+       "max_us": 2.406,
+       "std_us": 0.051,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.061,
+       "max_us": 19.781,
+       "std_us": 0.788,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.277,
+       "max_us": 0.693,
+       "std_us": 0.019,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.486,
+       "max_us": 125.886,
+       "std_us": 5.462,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.69,
+       "max_us": 12.624,
+       "std_us": 0.353,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.758,
+       "max_us": 20.014,
+       "std_us": 0.335,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.376,
+       "max_us": 6.131,
+       "std_us": 0.214,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.113581,
+     "iterations_mean": 3.998,
+     "iterations_std": 0.044677,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 445.952,
+       "max_us": 608.651,
+       "std_us": 27.883,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 14.29,
+       "max_us": 72.189,
+       "std_us": 1.674,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.142,
+       "max_us": 0.715,
+       "std_us": 0.017,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.627,
+       "max_us": 68.818,
+       "std_us": 1.599,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.288,
+       "max_us": 1.465,
+       "std_us": 0.034,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 100.497,
+       "max_us": 169.5,
+       "std_us": 7.039,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.837,
+       "max_us": 11.882,
+       "std_us": 0.388,
+       "count": 9996
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.895,
+       "max_us": 9.066,
+       "std_us": 0.32,
+       "count": 9996
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.499,
+       "max_us": 7.241,
+       "std_us": 0.279,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 4,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 8.38217228999929,
+   "freq_khz_before": "4900098",
+   "freq_khz_after": "4092153",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.033,
+     "errors": 66,
+     "trials": 2000,
+     "ber": 4e-06,
+     "uncoded_ber": 0.124441,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 443.623,
+       "max_us": 586.43,
+       "std_us": 31.321,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 14.187,
+       "max_us": 51.537,
+       "std_us": 4.7,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.14,
+       "max_us": 0.212,
+       "std_us": 0.012,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.539,
+       "max_us": 50.886,
+       "std_us": 4.598,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.287,
+       "max_us": 0.575,
+       "std_us": 0.029,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 98.654,
+       "max_us": 132.215,
+       "std_us": 7.655,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.8,
+       "max_us": 44.551,
+       "std_us": 0.585,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.916,
+       "max_us": 17.739,
+       "std_us": 0.404,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.414,
+       "max_us": 7.46,
+       "std_us": 0.328,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.0065,
+     "errors": 13,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121648,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 440.196,
+       "max_us": 574.602,
+       "std_us": 29.12,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 14.006,
+       "max_us": 26.114,
+       "std_us": 1.139,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.142,
+       "max_us": 2.412,
+       "std_us": 0.07,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.364,
+       "max_us": 25.442,
+       "std_us": 1.095,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.285,
+       "max_us": 1.545,
+       "std_us": 0.036,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 98.284,
+       "max_us": 137.546,
+       "std_us": 7.199,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.777,
+       "max_us": 13.48,
+       "std_us": 0.413,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.895,
+       "max_us": 18.163,
+       "std_us": 0.367,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.391,
+       "max_us": 7.347,
+       "std_us": 0.283,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.003,
+     "errors": 6,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.119016,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 451.506,
+       "max_us": 1532.0,
+       "std_us": 41.214,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 14.337,
+       "max_us": 38.284,
+       "std_us": 1.343,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.145,
+       "max_us": 3.44,
+       "std_us": 0.075,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.675,
+       "max_us": 36.475,
+       "std_us": 1.256,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.297,
+       "max_us": 12.379,
+       "std_us": 0.272,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 101.473,
+       "max_us": 593.26,
+       "std_us": 13.943,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.888,
+       "max_us": 29.735,
+       "std_us": 0.602,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 4.008,
+       "max_us": 43.028,
+       "std_us": 0.707,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.5,
+       "max_us": 21.055,
+       "std_us": 0.618,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116311,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 438.663,
+       "max_us": 605.429,
+       "std_us": 29.216,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.982,
+       "max_us": 22.318,
+       "std_us": 1.149,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.139,
+       "max_us": 0.245,
+       "std_us": 0.011,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.344,
+       "max_us": 21.709,
+       "std_us": 1.106,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.284,
+       "max_us": 0.59,
+       "std_us": 0.025,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 98.597,
+       "max_us": 134.511,
+       "std_us": 7.349,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.764,
+       "max_us": 14.964,
+       "std_us": 0.448,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.882,
+       "max_us": 11.943,
+       "std_us": 0.368,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.394,
+       "max_us": 12.013,
+       "std_us": 0.418,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 5,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 8.045168534001277,
+   "freq_khz_before": "4092153",
+   "freq_khz_after": "4788663",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.023,
+     "errors": 46,
+     "trials": 2000,
+     "ber": 3e-06,
+     "uncoded_ber": 0.124334,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 423.511,
+       "max_us": 555.956,
+       "std_us": 23.563,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.752,
+       "max_us": 22.394,
+       "std_us": 5.818,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.138,
+       "max_us": 0.209,
+       "std_us": 0.012,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.118,
+       "max_us": 21.224,
+       "std_us": 5.655,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.279,
+       "max_us": 0.653,
+       "std_us": 0.031,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.221,
+       "max_us": 134.208,
+       "std_us": 6.442,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.648,
+       "max_us": 13.194,
+       "std_us": 0.351,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.913,
+       "max_us": 10.926,
+       "std_us": 0.293,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.644,
+       "max_us": 9.066,
+       "std_us": 0.282,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.006,
+     "errors": 12,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121601,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 422.193,
+       "max_us": 1476.619,
+       "std_us": 31.633,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.564,
+       "max_us": 21.324,
+       "std_us": 0.838,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.138,
+       "max_us": 0.996,
+       "std_us": 0.022,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.932,
+       "max_us": 20.291,
+       "std_us": 0.801,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.278,
+       "max_us": 2.308,
+       "std_us": 0.066,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.169,
+       "max_us": 186.904,
+       "std_us": 5.902,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.635,
+       "max_us": 11.942,
+       "std_us": 0.331,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.903,
+       "max_us": 8.98,
+       "std_us": 0.268,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.636,
+       "max_us": 11.94,
+       "std_us": 0.302,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.004,
+     "errors": 8,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118882,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 422.148,
+       "max_us": 574.096,
+       "std_us": 20.458,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.516,
+       "max_us": 19.632,
+       "std_us": 0.783,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.137,
+       "max_us": 1.412,
+       "std_us": 0.031,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.891,
+       "max_us": 19.002,
+       "std_us": 0.753,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.275,
+       "max_us": 0.443,
+       "std_us": 0.017,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.469,
+       "max_us": 128.321,
+       "std_us": 5.583,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.627,
+       "max_us": 16.224,
+       "std_us": 0.344,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.907,
+       "max_us": 13.189,
+       "std_us": 0.311,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.64,
+       "max_us": 11.78,
+       "std_us": 0.351,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116244,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 427.437,
+       "max_us": 863.318,
+       "std_us": 27.267,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.982,
+       "max_us": 627.165,
+       "std_us": 13.752,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.138,
+       "max_us": 0.25,
+       "std_us": 0.012,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.353,
+       "max_us": 626.494,
+       "std_us": 13.747,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.279,
+       "max_us": 3.632,
+       "std_us": 0.078,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 98.369,
+       "max_us": 139.714,
+       "std_us": 6.522,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.653,
+       "max_us": 13.436,
+       "std_us": 0.367,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.933,
+       "max_us": 33.849,
+       "std_us": 0.451,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.658,
+       "max_us": 11.405,
+       "std_us": 0.342,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 6,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 10.853333183000359,
+   "freq_khz_before": "4900000",
+   "freq_khz_after": "4600046",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.03,
+     "errors": 60,
+     "trials": 2000,
+     "ber": 4e-06,
+     "uncoded_ber": 0.124367,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 445.037,
+       "max_us": 628.647,
+       "std_us": 34.99,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 14.081,
+       "max_us": 20.397,
+       "std_us": 4.833,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.139,
+       "max_us": 0.215,
+       "std_us": 0.013,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.429,
+       "max_us": 19.603,
+       "std_us": 4.683,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.288,
+       "max_us": 3.049,
+       "std_us": 0.069,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 98.265,
+       "max_us": 139.763,
+       "std_us": 8.603,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.796,
+       "max_us": 9.478,
+       "std_us": 0.411,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.87,
+       "max_us": 18.018,
+       "std_us": 0.43,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.413,
+       "max_us": 6.691,
+       "std_us": 0.317,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.006,
+     "errors": 12,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121819,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 436.277,
+       "max_us": 1780.017,
+       "std_us": 40.296,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.633,
+       "max_us": 38.466,
+       "std_us": 1.198,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.367,
+       "std_us": 0.012,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.996,
+       "max_us": 36.636,
+       "std_us": 1.141,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.28,
+       "max_us": 4.483,
+       "std_us": 0.097,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.098,
+       "max_us": 1078.557,
+       "std_us": 23.015,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.723,
+       "max_us": 42.96,
+       "std_us": 0.956,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.769,
+       "max_us": 45.22,
+       "std_us": 0.913,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.343,
+       "max_us": 50.69,
+       "std_us": 1.095,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.0015,
+     "errors": 3,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.119004,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 433.637,
+       "max_us": 594.655,
+       "std_us": 22.634,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.534,
+       "max_us": 22.305,
+       "std_us": 0.85,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 1.248,
+       "std_us": 0.027,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.907,
+       "max_us": 21.666,
+       "std_us": 0.815,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.276,
+       "max_us": 0.543,
+       "std_us": 0.02,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.41,
+       "max_us": 132.533,
+       "std_us": 5.538,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.684,
+       "max_us": 10.929,
+       "std_us": 0.33,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.742,
+       "max_us": 41.382,
+       "std_us": 0.516,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.308,
+       "max_us": 11.396,
+       "std_us": 0.284,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116201,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 434.431,
+       "max_us": 4055.949,
+       "std_us": 84.458,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.586,
+       "max_us": 83.377,
+       "std_us": 1.794,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.137,
+       "max_us": 3.312,
+       "std_us": 0.083,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.954,
+       "max_us": 79.66,
+       "std_us": 1.714,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.277,
+       "max_us": 1.703,
+       "std_us": 0.038,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.828,
+       "max_us": 204.438,
+       "std_us": 6.05,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.681,
+       "max_us": 13.146,
+       "std_us": 0.357,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.736,
+       "max_us": 8.17,
+       "std_us": 0.269,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.314,
+       "max_us": 7.361,
+       "std_us": 0.265,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.11362,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 438.807,
+       "max_us": 574.887,
+       "std_us": 26.55,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.777,
+       "max_us": 20.852,
+       "std_us": 0.969,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 0.202,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.142,
+       "max_us": 20.198,
+       "std_us": 0.924,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.282,
+       "max_us": 2.62,
+       "std_us": 0.058,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.704,
+       "max_us": 131.762,
+       "std_us": 6.281,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.732,
+       "max_us": 8.599,
+       "std_us": 0.338,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.801,
+       "max_us": 14.49,
+       "std_us": 0.307,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.369,
+       "max_us": 8.908,
+       "std_us": 0.302,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 7,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 12.051632891998452,
+   "freq_khz_before": "4600046",
+   "freq_khz_after": "4733680",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.032,
+     "errors": 64,
+     "trials": 2000,
+     "ber": 4e-06,
+     "uncoded_ber": 0.124337,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 424.497,
+       "max_us": 543.555,
+       "std_us": 22.625,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.741,
+       "max_us": 32.464,
+       "std_us": 4.638,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.205,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.08,
+       "max_us": 31.8,
+       "std_us": 4.525,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.277,
+       "max_us": 0.629,
+       "std_us": 0.025,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.631,
+       "max_us": 136.294,
+       "std_us": 5.92,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.643,
+       "max_us": 12.905,
+       "std_us": 0.382,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.751,
+       "max_us": 44.4,
+       "std_us": 0.529,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.285,
+       "max_us": 7.589,
+       "std_us": 0.289,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.008,
+     "errors": 16,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121624,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 436.395,
+       "max_us": 3451.28,
+       "std_us": 73.003,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.838,
+       "max_us": 82.469,
+       "std_us": 1.832,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.138,
+       "max_us": 0.822,
+       "std_us": 0.019,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.175,
+       "max_us": 78.621,
+       "std_us": 1.749,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.28,
+       "max_us": 1.657,
+       "std_us": 0.037,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.396,
+       "max_us": 193.345,
+       "std_us": 6.964,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.708,
+       "max_us": 14.039,
+       "std_us": 0.396,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.805,
+       "max_us": 13.005,
+       "std_us": 0.335,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.34,
+       "max_us": 8.772,
+       "std_us": 0.33,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.003,
+     "errors": 6,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118951,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 427.01,
+       "max_us": 943.242,
+       "std_us": 24.728,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.551,
+       "max_us": 24.072,
+       "std_us": 0.873,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.378,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.904,
+       "max_us": 23.47,
+       "std_us": 0.838,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.275,
+       "max_us": 0.396,
+       "std_us": 0.018,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.619,
+       "max_us": 130.114,
+       "std_us": 5.45,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.62,
+       "max_us": 10.051,
+       "std_us": 0.338,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.732,
+       "max_us": 30.442,
+       "std_us": 0.4,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.262,
+       "max_us": 8.199,
+       "std_us": 0.252,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.11626,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 422.977,
+       "max_us": 536.197,
+       "std_us": 17.978,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.475,
+       "max_us": 22.731,
+       "std_us": 0.911,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.189,
+       "std_us": 0.008,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.83,
+       "max_us": 22.054,
+       "std_us": 0.883,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.274,
+       "max_us": 2.183,
+       "std_us": 0.05,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.621,
+       "max_us": 149.969,
+       "std_us": 5.223,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.612,
+       "max_us": 17.649,
+       "std_us": 0.4,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.712,
+       "max_us": 13.628,
+       "std_us": 0.304,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.254,
+       "max_us": 9.224,
+       "std_us": 0.253,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.113567,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 433.728,
+       "max_us": 3166.845,
+       "std_us": 69.321,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.723,
+       "max_us": 35.969,
+       "std_us": 1.21,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 0.355,
+       "std_us": 0.012,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.073,
+       "max_us": 34.3,
+       "std_us": 1.157,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.279,
+       "max_us": 0.726,
+       "std_us": 0.026,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.305,
+       "max_us": 1156.303,
+       "std_us": 24.996,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.696,
+       "max_us": 65.167,
+       "std_us": 1.076,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.807,
+       "max_us": 44.677,
+       "std_us": 0.972,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.336,
+       "max_us": 38.75,
+       "std_us": 0.85,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.5,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.110922,
+     "iterations_mean": 3.997,
+     "iterations_std": 0.05469,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 421.172,
+       "max_us": 523.05,
+       "std_us": 16.954,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.416,
+       "max_us": 22.845,
+       "std_us": 0.685,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.133,
+       "max_us": 0.196,
+       "std_us": 0.007,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.78,
+       "max_us": 22.218,
+       "std_us": 0.658,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.272,
+       "max_us": 0.365,
+       "std_us": 0.015,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.576,
+       "max_us": 126.485,
+       "std_us": 4.475,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.588,
+       "max_us": 8.04,
+       "std_us": 0.273,
+       "count": 9994
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.7,
+       "max_us": 15.298,
+       "std_us": 0.246,
+       "count": 9994
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.248,
+       "max_us": 18.185,
+       "std_us": 0.378,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 8,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 10.075273812999512,
+   "freq_khz_before": "4733680",
+   "freq_khz_after": "4716919",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.0285,
+     "errors": 57,
+     "trials": 2000,
+     "ber": 4e-06,
+     "uncoded_ber": 0.124383,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 430.11,
+       "max_us": 585.557,
+       "std_us": 27.776,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.845,
+       "max_us": 22.141,
+       "std_us": 4.656,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.138,
+       "max_us": 0.204,
+       "std_us": 0.013,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.179,
+       "max_us": 19.688,
+       "std_us": 4.538,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.28,
+       "max_us": 3.867,
+       "std_us": 0.085,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 98.517,
+       "max_us": 140.829,
+       "std_us": 7.088,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.687,
+       "max_us": 17.693,
+       "std_us": 0.372,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.96,
+       "max_us": 10.105,
+       "std_us": 0.328,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.624,
+       "max_us": 8.324,
+       "std_us": 0.305,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.0085,
+     "errors": 17,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121697,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 423.759,
+       "max_us": 1328.547,
+       "std_us": 30.818,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.619,
+       "max_us": 111.487,
+       "std_us": 2.394,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 1.366,
+       "std_us": 0.036,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.97,
+       "max_us": 106.113,
+       "std_us": 2.284,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.274,
+       "max_us": 2.341,
+       "std_us": 0.051,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.369,
+       "max_us": 144.288,
+       "std_us": 6.167,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.637,
+       "max_us": 31.596,
+       "std_us": 0.426,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.909,
+       "max_us": 12.847,
+       "std_us": 0.32,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.576,
+       "max_us": 6.688,
+       "std_us": 0.255,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.0025,
+     "errors": 5,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118913,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 420.623,
+       "max_us": 559.264,
+       "std_us": 21.358,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.508,
+       "max_us": 45.836,
+       "std_us": 1.096,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.19,
+       "std_us": 0.009,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.867,
+       "max_us": 45.158,
+       "std_us": 1.07,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.271,
+       "max_us": 0.369,
+       "std_us": 0.018,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.433,
+       "max_us": 132.235,
+       "std_us": 5.701,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.624,
+       "max_us": 11.051,
+       "std_us": 0.316,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.896,
+       "max_us": 17.443,
+       "std_us": 0.338,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.566,
+       "max_us": 7.312,
+       "std_us": 0.24,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.001,
+     "errors": 2,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116234,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 425.186,
+       "max_us": 585.125,
+       "std_us": 23.578,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.643,
+       "max_us": 52.177,
+       "std_us": 1.293,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.199,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.0,
+       "max_us": 51.591,
+       "std_us": 1.269,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.274,
+       "max_us": 0.396,
+       "std_us": 0.019,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 98.629,
+       "max_us": 137.914,
+       "std_us": 6.528,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.666,
+       "max_us": 11.46,
+       "std_us": 0.379,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.93,
+       "max_us": 8.788,
+       "std_us": 0.303,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.601,
+       "max_us": 7.606,
+       "std_us": 0.304,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.113614,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 425.778,
+       "max_us": 659.075,
+       "std_us": 24.729,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.631,
+       "max_us": 28.591,
+       "std_us": 1.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 0.369,
+       "std_us": 0.011,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.993,
+       "max_us": 27.953,
+       "std_us": 0.974,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.275,
+       "max_us": 0.501,
+       "std_us": 0.021,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 98.754,
+       "max_us": 190.963,
+       "std_us": 6.852,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.657,
+       "max_us": 20.094,
+       "std_us": 0.406,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.931,
+       "max_us": 37.416,
+       "std_us": 0.506,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.591,
+       "max_us": 6.992,
+       "std_us": 0.287,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 9,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 8.49127803400188,
+   "freq_khz_before": "4716919",
+   "freq_khz_after": "4822613",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.0285,
+     "errors": 57,
+     "trials": 2000,
+     "ber": 4e-06,
+     "uncoded_ber": 0.124338,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 421.042,
+       "max_us": 553.066,
+       "std_us": 21.924,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.61,
+       "max_us": 40.477,
+       "std_us": 5.479,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 2.497,
+       "std_us": 0.054,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.984,
+       "max_us": 39.85,
+       "std_us": 5.326,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.273,
+       "max_us": 1.184,
+       "std_us": 0.032,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.966,
+       "max_us": 129.463,
+       "std_us": 5.105,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.676,
+       "max_us": 23.892,
+       "std_us": 0.394,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.761,
+       "max_us": 16.18,
+       "std_us": 0.322,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.306,
+       "max_us": 9.037,
+       "std_us": 0.227,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.008,
+     "errors": 16,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121653,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 425.653,
+       "max_us": 1137.387,
+       "std_us": 29.719,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.568,
+       "max_us": 23.038,
+       "std_us": 0.95,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 0.35,
+       "std_us": 0.011,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.945,
+       "max_us": 22.42,
+       "std_us": 0.913,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.274,
+       "max_us": 0.565,
+       "std_us": 0.021,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.285,
+       "max_us": 129.869,
+       "std_us": 6.507,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.713,
+       "max_us": 13.253,
+       "std_us": 0.384,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.809,
+       "max_us": 14.093,
+       "std_us": 0.365,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.339,
+       "max_us": 6.401,
+       "std_us": 0.247,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.0045,
+     "errors": 9,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.118959,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 419.049,
+       "max_us": 740.422,
+       "std_us": 17.14,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.424,
+       "max_us": 84.031,
+       "std_us": 1.721,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 2.473,
+       "std_us": 0.056,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.81,
+       "max_us": 79.96,
+       "std_us": 1.637,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.27,
+       "max_us": 1.693,
+       "std_us": 0.035,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.904,
+       "max_us": 171.475,
+       "std_us": 4.483,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.654,
+       "max_us": 21.987,
+       "std_us": 0.351,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.733,
+       "max_us": 8.581,
+       "std_us": 0.215,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.291,
+       "max_us": 7.521,
+       "std_us": 0.22,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.11623,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 420.605,
+       "max_us": 563.95,
+       "std_us": 16.659,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.406,
+       "max_us": 22.25,
+       "std_us": 0.707,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.182,
+       "std_us": 0.008,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.792,
+       "max_us": 21.408,
+       "std_us": 0.67,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.273,
+       "max_us": 4.07,
+       "std_us": 0.111,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.455,
+       "max_us": 153.836,
+       "std_us": 4.751,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.666,
+       "max_us": 62.99,
+       "std_us": 0.676,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.742,
+       "max_us": 14.365,
+       "std_us": 0.242,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.293,
+       "max_us": 4.682,
+       "std_us": 0.172,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 10,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 9.981093135000265,
+   "freq_khz_before": "4822613",
+   "freq_khz_after": "4871268",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.0375,
+     "errors": 75,
+     "trials": 2000,
+     "ber": 5e-06,
+     "uncoded_ber": 0.124365,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 422.771,
+       "max_us": 590.674,
+       "std_us": 22.158,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.65,
+       "max_us": 27.072,
+       "std_us": 4.776,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 0.198,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.996,
+       "max_us": 26.155,
+       "std_us": 4.636,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.282,
+       "max_us": 2.203,
+       "std_us": 0.051,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.464,
+       "max_us": 131.946,
+       "std_us": 5.657,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.652,
+       "max_us": 17.325,
+       "std_us": 0.375,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.661,
+       "max_us": 11.187,
+       "std_us": 0.289,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.334,
+       "max_us": 5.977,
+       "std_us": 0.24,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.0105,
+     "errors": 21,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121636,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 429.879,
+       "max_us": 2345.023,
+       "std_us": 51.116,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.642,
+       "max_us": 40.805,
+       "std_us": 1.28,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.137,
+       "max_us": 0.399,
+       "std_us": 0.012,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.99,
+       "max_us": 38.783,
+       "std_us": 1.231,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.282,
+       "max_us": 0.878,
+       "std_us": 0.025,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.077,
+       "max_us": 1153.563,
+       "std_us": 24.612,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.706,
+       "max_us": 43.361,
+       "std_us": 0.956,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.715,
+       "max_us": 61.487,
+       "std_us": 1.036,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.377,
+       "max_us": 40.417,
+       "std_us": 0.872,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.003,
+     "errors": 6,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118935,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 421.151,
+       "max_us": 531.004,
+       "std_us": 15.824,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.34,
+       "max_us": 32.292,
+       "std_us": 0.821,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.133,
+       "max_us": 0.176,
+       "std_us": 0.007,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.704,
+       "max_us": 31.613,
+       "std_us": 0.801,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.275,
+       "max_us": 0.378,
+       "std_us": 0.014,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 93.679,
+       "max_us": 130.801,
+       "std_us": 4.164,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.596,
+       "max_us": 32.895,
+       "std_us": 0.393,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.616,
+       "max_us": 12.674,
+       "std_us": 0.252,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.295,
+       "max_us": 11.831,
+       "std_us": 0.274,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116258,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 421.482,
+       "max_us": 1158.855,
+       "std_us": 25.33,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.398,
+       "max_us": 54.591,
+       "std_us": 1.215,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.279,
+       "std_us": 0.008,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.76,
+       "max_us": 53.906,
+       "std_us": 1.194,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.276,
+       "max_us": 0.629,
+       "std_us": 0.019,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.82,
+       "max_us": 432.695,
+       "std_us": 9.143,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.623,
+       "max_us": 22.277,
+       "std_us": 0.432,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.643,
+       "max_us": 22.332,
+       "std_us": 0.421,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.333,
+       "max_us": 21.132,
+       "std_us": 0.56,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.11352,
+     "iterations_mean": 3.9985,
+     "iterations_std": 0.038701,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 418.136,
+       "max_us": 576.205,
+       "std_us": 17.175,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.411,
+       "max_us": 23.121,
+       "std_us": 0.852,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 1.899,
+       "std_us": 0.047,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.769,
+       "max_us": 22.499,
+       "std_us": 0.824,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.276,
+       "max_us": 0.38,
+       "std_us": 0.015,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.589,
+       "max_us": 129.991,
+       "std_us": 4.809,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.605,
+       "max_us": 10.854,
+       "std_us": 0.319,
+       "count": 9997
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.626,
+       "max_us": 14.093,
+       "std_us": 0.283,
+       "count": 9997
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.305,
+       "max_us": 10.958,
+       "std_us": 0.281,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 11,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 9.99064475799969,
+   "freq_khz_before": "4871268",
+   "freq_khz_after": "4900000",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.0315,
+     "errors": 63,
+     "trials": 2000,
+     "ber": 4e-06,
+     "uncoded_ber": 0.124386,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 423.629,
+       "max_us": 590.321,
+       "std_us": 21.079,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.715,
+       "max_us": 27.218,
+       "std_us": 4.739,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.143,
+       "max_us": 0.222,
+       "std_us": 0.012,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.053,
+       "max_us": 26.551,
+       "std_us": 4.599,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.279,
+       "max_us": 0.49,
+       "std_us": 0.024,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.864,
+       "max_us": 134.924,
+       "std_us": 5.578,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.635,
+       "max_us": 10.237,
+       "std_us": 0.325,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.919,
+       "max_us": 16.082,
+       "std_us": 0.355,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.545,
+       "max_us": 7.346,
+       "std_us": 0.273,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.014,
+     "errors": 28,
+     "trials": 2000,
+     "ber": 2e-06,
+     "uncoded_ber": 0.121673,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 428.303,
+       "max_us": 3554.896,
+       "std_us": 74.309,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.585,
+       "max_us": 36.069,
+       "std_us": 1.059,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.144,
+       "max_us": 1.009,
+       "std_us": 0.023,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.929,
+       "max_us": 34.252,
+       "std_us": 1.004,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.281,
+       "max_us": 5.281,
+       "std_us": 0.115,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 98.118,
+       "max_us": 1135.027,
+       "std_us": 24.187,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.684,
+       "max_us": 61.405,
+       "std_us": 1.1,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.964,
+       "max_us": 47.135,
+       "std_us": 1.0,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.586,
+       "max_us": 42.98,
+       "std_us": 0.945,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.002,
+     "errors": 4,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118993,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 419.307,
+       "max_us": 539.146,
+       "std_us": 16.029,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.402,
+       "max_us": 48.808,
+       "std_us": 1.101,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.141,
+       "max_us": 0.197,
+       "std_us": 0.009,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.763,
+       "max_us": 48.158,
+       "std_us": 1.084,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.274,
+       "max_us": 0.63,
+       "std_us": 0.016,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.525,
+       "max_us": 130.712,
+       "std_us": 4.718,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.609,
+       "max_us": 19.589,
+       "std_us": 0.333,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.89,
+       "max_us": 9.951,
+       "std_us": 0.24,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.513,
+       "max_us": 6.599,
+       "std_us": 0.205,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116275,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 420.398,
+       "max_us": 573.387,
+       "std_us": 20.002,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.464,
+       "max_us": 18.874,
+       "std_us": 0.804,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.142,
+       "max_us": 0.201,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.821,
+       "max_us": 17.953,
+       "std_us": 0.767,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.276,
+       "max_us": 0.672,
+       "std_us": 0.02,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.187,
+       "max_us": 136.296,
+       "std_us": 5.3,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.62,
+       "max_us": 8.822,
+       "std_us": 0.307,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.905,
+       "max_us": 12.225,
+       "std_us": 0.282,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.521,
+       "max_us": 6.589,
+       "std_us": 0.221,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.113602,
+     "iterations_mean": 3.9995,
+     "iterations_std": 0.022355,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 421.544,
+       "max_us": 1334.051,
+       "std_us": 29.066,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.424,
+       "max_us": 23.582,
+       "std_us": 0.805,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.141,
+       "max_us": 0.248,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.786,
+       "max_us": 22.397,
+       "std_us": 0.773,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.275,
+       "max_us": 0.514,
+       "std_us": 0.017,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.171,
+       "max_us": 183.488,
+       "std_us": 5.48,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.605,
+       "max_us": 9.988,
+       "std_us": 0.313,
+       "count": 9999
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.89,
+       "max_us": 32.162,
+       "std_us": 0.378,
+       "count": 9999
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.517,
+       "max_us": 11.209,
+       "std_us": 0.281,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 12,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 9.95387594800195,
+   "freq_khz_before": "4900000",
+   "freq_khz_after": "4507087",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.031,
+     "errors": 62,
+     "trials": 2000,
+     "ber": 4e-06,
+     "uncoded_ber": 0.124318,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 427.371,
+       "max_us": 579.211,
+       "std_us": 25.388,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.919,
+       "max_us": 31.116,
+       "std_us": 10.638,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.137,
+       "max_us": 0.214,
+       "std_us": 0.011,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.25,
+       "max_us": 30.436,
+       "std_us": 10.494,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.288,
+       "max_us": 0.531,
+       "std_us": 0.027,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.343,
+       "max_us": 132.323,
+       "std_us": 6.665,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.69,
+       "max_us": 13.379,
+       "std_us": 0.382,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.727,
+       "max_us": 11.182,
+       "std_us": 0.32,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.353,
+       "max_us": 6.565,
+       "std_us": 0.297,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.0065,
+     "errors": 13,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121672,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 425.685,
+       "max_us": 3519.804,
+       "std_us": 72.822,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.584,
+       "max_us": 38.495,
+       "std_us": 1.087,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 1.058,
+       "std_us": 0.023,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.927,
+       "max_us": 36.61,
+       "std_us": 1.042,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.284,
+       "max_us": 0.863,
+       "std_us": 0.024,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.124,
+       "max_us": 581.66,
+       "std_us": 12.49,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.678,
+       "max_us": 42.309,
+       "std_us": 0.74,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.721,
+       "max_us": 44.312,
+       "std_us": 0.767,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.325,
+       "max_us": 6.491,
+       "std_us": 0.247,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.0025,
+     "errors": 5,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.119005,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 419.407,
+       "max_us": 544.342,
+       "std_us": 16.544,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.395,
+       "max_us": 17.692,
+       "std_us": 0.62,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 1.121,
+       "std_us": 0.023,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.75,
+       "max_us": 16.997,
+       "std_us": 0.593,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.28,
+       "max_us": 0.391,
+       "std_us": 0.015,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.148,
+       "max_us": 574.674,
+       "std_us": 11.701,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.615,
+       "max_us": 11.653,
+       "std_us": 0.323,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.658,
+       "max_us": 14.338,
+       "std_us": 0.281,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.282,
+       "max_us": 5.411,
+       "std_us": 0.18,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.001,
+     "errors": 2,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116281,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 420.077,
+       "max_us": 547.545,
+       "std_us": 18.191,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.484,
+       "max_us": 27.415,
+       "std_us": 0.851,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.177,
+       "std_us": 0.007,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.837,
+       "max_us": 26.814,
+       "std_us": 0.83,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.281,
+       "max_us": 0.375,
+       "std_us": 0.016,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.402,
+       "max_us": 131.006,
+       "std_us": 4.751,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.616,
+       "max_us": 40.839,
+       "std_us": 0.479,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.664,
+       "max_us": 33.57,
+       "std_us": 0.422,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.285,
+       "max_us": 5.301,
+       "std_us": 0.179,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.11363,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 418.179,
+       "max_us": 726.14,
+       "std_us": 16.449,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.466,
+       "max_us": 27.063,
+       "std_us": 0.885,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.229,
+       "std_us": 0.007,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.82,
+       "max_us": 26.439,
+       "std_us": 0.864,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.281,
+       "max_us": 0.493,
+       "std_us": 0.017,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.749,
+       "max_us": 294.542,
+       "std_us": 6.506,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.62,
+       "max_us": 25.677,
+       "std_us": 0.467,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.67,
+       "max_us": 18.587,
+       "std_us": 0.353,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.303,
+       "max_us": 28.298,
+       "std_us": 0.622,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 13,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 10.019386427000427,
+   "freq_khz_before": "4507087",
+   "freq_khz_after": "4886373",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.04,
+     "errors": 80,
+     "trials": 2000,
+     "ber": 5e-06,
+     "uncoded_ber": 0.124375,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 426.775,
+       "max_us": 573.907,
+       "std_us": 23.72,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.731,
+       "max_us": 24.386,
+       "std_us": 5.226,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.137,
+       "max_us": 0.311,
+       "std_us": 0.011,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.08,
+       "max_us": 23.711,
+       "std_us": 5.087,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.279,
+       "max_us": 0.572,
+       "std_us": 0.027,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.428,
+       "max_us": 131.061,
+       "std_us": 6.349,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.675,
+       "max_us": 24.221,
+       "std_us": 0.423,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.772,
+       "max_us": 18.049,
+       "std_us": 0.326,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.34,
+       "max_us": 6.473,
+       "std_us": 0.248,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.0095,
+     "errors": 19,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121684,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 425.427,
+       "max_us": 547.636,
+       "std_us": 21.74,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.538,
+       "max_us": 17.811,
+       "std_us": 0.786,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.137,
+       "max_us": 0.195,
+       "std_us": 0.009,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.892,
+       "max_us": 16.969,
+       "std_us": 0.752,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.277,
+       "max_us": 0.672,
+       "std_us": 0.02,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.098,
+       "max_us": 132.148,
+       "std_us": 5.883,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.645,
+       "max_us": 25.81,
+       "std_us": 0.396,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.756,
+       "max_us": 32.438,
+       "std_us": 0.432,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.321,
+       "max_us": 10.376,
+       "std_us": 0.277,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.003,
+     "errors": 6,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.1189,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 420.569,
+       "max_us": 682.084,
+       "std_us": 20.642,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.435,
+       "max_us": 28.111,
+       "std_us": 0.861,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 0.195,
+       "std_us": 0.009,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.788,
+       "max_us": 27.495,
+       "std_us": 0.794,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.28,
+       "max_us": 11.851,
+       "std_us": 0.26,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.797,
+       "max_us": 159.316,
+       "std_us": 5.674,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.622,
+       "max_us": 13.021,
+       "std_us": 0.346,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.734,
+       "max_us": 16.451,
+       "std_us": 0.341,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.304,
+       "max_us": 6.193,
+       "std_us": 0.227,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.11624,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 422.424,
+       "max_us": 548.81,
+       "std_us": 20.878,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.485,
+       "max_us": 52.508,
+       "std_us": 1.339,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 0.199,
+       "std_us": 0.009,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.839,
+       "max_us": 51.841,
+       "std_us": 1.319,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.274,
+       "max_us": 0.376,
+       "std_us": 0.016,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.194,
+       "max_us": 134.73,
+       "std_us": 5.663,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.625,
+       "max_us": 15.462,
+       "std_us": 0.336,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.737,
+       "max_us": 17.082,
+       "std_us": 0.308,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.306,
+       "max_us": 9.085,
+       "std_us": 0.245,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.113602,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 425.607,
+       "max_us": 569.764,
+       "std_us": 23.994,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.614,
+       "max_us": 23.435,
+       "std_us": 0.935,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.139,
+       "max_us": 2.29,
+       "std_us": 0.05,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.961,
+       "max_us": 22.592,
+       "std_us": 0.895,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.277,
+       "max_us": 0.393,
+       "std_us": 0.019,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.182,
+       "max_us": 139.008,
+       "std_us": 6.214,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.649,
+       "max_us": 8.653,
+       "std_us": 0.317,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.764,
+       "max_us": 10.057,
+       "std_us": 0.296,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.333,
+       "max_us": 9.245,
+       "std_us": 0.266,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 14,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 8.027353626999684,
+   "freq_khz_before": "4886373",
+   "freq_khz_after": "4889258",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.031,
+     "errors": 62,
+     "trials": 2000,
+     "ber": 4e-06,
+     "uncoded_ber": 0.124385,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 432.301,
+       "max_us": 1306.76,
+       "std_us": 33.824,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.801,
+       "max_us": 26.757,
+       "std_us": 7.394,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.137,
+       "max_us": 1.028,
+       "std_us": 0.023,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.144,
+       "max_us": 25.401,
+       "std_us": 7.269,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.288,
+       "max_us": 0.601,
+       "std_us": 0.028,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.12,
+       "max_us": 570.204,
+       "std_us": 12.692,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.697,
+       "max_us": 26.061,
+       "std_us": 0.608,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.817,
+       "max_us": 26.736,
+       "std_us": 0.539,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.339,
+       "max_us": 23.023,
+       "std_us": 0.54,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.0105,
+     "errors": 21,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121677,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 426.022,
+       "max_us": 578.597,
+       "std_us": 22.508,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.495,
+       "max_us": 21.065,
+       "std_us": 0.863,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.199,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.848,
+       "max_us": 20.458,
+       "std_us": 0.826,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.285,
+       "max_us": 2.397,
+       "std_us": 0.051,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.045,
+       "max_us": 142.178,
+       "std_us": 5.655,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.641,
+       "max_us": 12.431,
+       "std_us": 0.363,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.761,
+       "max_us": 9.04,
+       "std_us": 0.28,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.294,
+       "max_us": 7.149,
+       "std_us": 0.247,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.002,
+     "errors": 4,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118959,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 424.152,
+       "max_us": 2158.039,
+       "std_us": 42.938,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.41,
+       "max_us": 32.413,
+       "std_us": 0.895,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.449,
+       "std_us": 0.011,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.767,
+       "max_us": 30.715,
+       "std_us": 0.853,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.282,
+       "max_us": 3.056,
+       "std_us": 0.065,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.075,
+       "max_us": 1122.98,
+       "std_us": 23.568,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.627,
+       "max_us": 42.735,
+       "std_us": 0.915,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.756,
+       "max_us": 45.751,
+       "std_us": 0.944,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.285,
+       "max_us": 39.022,
+       "std_us": 0.827,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116215,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 420.765,
+       "max_us": 549.157,
+       "std_us": 15.295,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.364,
+       "max_us": 20.476,
+       "std_us": 0.679,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.133,
+       "max_us": 0.191,
+       "std_us": 0.009,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.722,
+       "max_us": 19.645,
+       "std_us": 0.651,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.28,
+       "max_us": 0.388,
+       "std_us": 0.015,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.439,
+       "max_us": 129.802,
+       "std_us": 4.191,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.584,
+       "max_us": 9.3,
+       "std_us": 0.264,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.721,
+       "max_us": 14.518,
+       "std_us": 0.227,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.25,
+       "max_us": 4.828,
+       "std_us": 0.159,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 15,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 10.613959143000102,
+   "freq_khz_before": "4889258",
+   "freq_khz_after": "4900000",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.033,
+     "errors": 66,
+     "trials": 2000,
+     "ber": 4e-06,
+     "uncoded_ber": 0.124402,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 424.92,
+       "max_us": 610.692,
+       "std_us": 25.575,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.807,
+       "max_us": 24.076,
+       "std_us": 4.86,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.138,
+       "max_us": 1.099,
+       "std_us": 0.025,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.143,
+       "max_us": 22.618,
+       "std_us": 4.735,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.281,
+       "max_us": 3.454,
+       "std_us": 0.077,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 98.083,
+       "max_us": 136.204,
+       "std_us": 6.625,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.704,
+       "max_us": 9.678,
+       "std_us": 0.359,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.94,
+       "max_us": 13.933,
+       "std_us": 0.32,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.627,
+       "max_us": 20.754,
+       "std_us": 0.469,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.01,
+     "errors": 20,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.12171,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 422.193,
+       "max_us": 1405.696,
+       "std_us": 30.194,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.51,
+       "max_us": 24.434,
+       "std_us": 0.818,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 0.256,
+       "std_us": 0.011,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.866,
+       "max_us": 23.26,
+       "std_us": 0.785,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.274,
+       "max_us": 0.491,
+       "std_us": 0.018,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.337,
+       "max_us": 139.069,
+       "std_us": 5.354,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.68,
+       "max_us": 24.428,
+       "std_us": 0.395,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.903,
+       "max_us": 13.402,
+       "std_us": 0.276,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.59,
+       "max_us": 7.321,
+       "std_us": 0.241,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.001,
+     "errors": 2,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118968,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 420.236,
+       "max_us": 562.706,
+       "std_us": 17.963,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.432,
+       "max_us": 18.542,
+       "std_us": 0.651,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.219,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.794,
+       "max_us": 17.69,
+       "std_us": 0.623,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.272,
+       "max_us": 0.379,
+       "std_us": 0.015,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.261,
+       "max_us": 135.227,
+       "std_us": 4.809,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.664,
+       "max_us": 11.645,
+       "std_us": 0.314,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.891,
+       "max_us": 22.947,
+       "std_us": 0.373,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.573,
+       "max_us": 14.616,
+       "std_us": 0.31,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.11636,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 419.988,
+       "max_us": 1881.055,
+       "std_us": 37.574,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.487,
+       "max_us": 40.527,
+       "std_us": 0.975,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.136,
+       "max_us": 0.406,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.848,
+       "max_us": 38.644,
+       "std_us": 0.933,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.274,
+       "max_us": 1.263,
+       "std_us": 0.03,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 98.13,
+       "max_us": 1160.146,
+       "std_us": 24.253,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.679,
+       "max_us": 42.756,
+       "std_us": 0.92,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.912,
+       "max_us": 57.109,
+       "std_us": 1.054,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.594,
+       "max_us": 42.105,
+       "std_us": 0.891,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.113655,
+     "iterations_mean": 3.9995,
+     "iterations_std": 0.022355,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 417.449,
+       "max_us": 563.43,
+       "std_us": 17.996,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.476,
+       "max_us": 32.54,
+       "std_us": 0.841,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.19,
+       "std_us": 0.008,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.843,
+       "max_us": 31.888,
+       "std_us": 0.818,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.273,
+       "max_us": 0.667,
+       "std_us": 0.017,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 97.851,
+       "max_us": 133.934,
+       "std_us": 4.914,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.658,
+       "max_us": 20.494,
+       "std_us": 0.367,
+       "count": 9999
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.891,
+       "max_us": 21.031,
+       "std_us": 0.325,
+       "count": 9999
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.576,
+       "max_us": 16.147,
+       "std_us": 0.343,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 16,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 13.880838013999892,
+   "freq_khz_before": "4900000",
+   "freq_khz_after": "4893464",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.0355,
+     "errors": 71,
+     "trials": 2000,
+     "ber": 5e-06,
+     "uncoded_ber": 0.124458,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 425.581,
+       "max_us": 924.946,
+       "std_us": 26.294,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.725,
+       "max_us": 28.051,
+       "std_us": 4.599,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.137,
+       "max_us": 0.436,
+       "std_us": 0.013,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.059,
+       "max_us": 26.501,
+       "std_us": 4.462,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.286,
+       "max_us": 0.692,
+       "std_us": 0.027,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.574,
+       "max_us": 137.738,
+       "std_us": 6.522,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.677,
+       "max_us": 25.371,
+       "std_us": 0.447,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.739,
+       "max_us": 14.335,
+       "std_us": 0.339,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.32,
+       "max_us": 9.477,
+       "std_us": 0.309,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.0065,
+     "errors": 13,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.12174,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 422.946,
+       "max_us": 784.951,
+       "std_us": 21.415,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.456,
+       "max_us": 24.6,
+       "std_us": 0.879,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.249,
+       "std_us": 0.009,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.806,
+       "max_us": 23.389,
+       "std_us": 0.845,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.282,
+       "max_us": 1.235,
+       "std_us": 0.03,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.165,
+       "max_us": 180.444,
+       "std_us": 6.036,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.652,
+       "max_us": 16.923,
+       "std_us": 0.373,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.719,
+       "max_us": 10.019,
+       "std_us": 0.302,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.302,
+       "max_us": 11.495,
+       "std_us": 0.306,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.0035,
+     "errors": 7,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118951,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 417.57,
+       "max_us": 537.216,
+       "std_us": 14.061,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.331,
+       "max_us": 22.112,
+       "std_us": 0.692,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.188,
+       "std_us": 0.007,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.683,
+       "max_us": 21.162,
+       "std_us": 0.663,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.281,
+       "max_us": 2.465,
+       "std_us": 0.065,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.549,
+       "max_us": 122.896,
+       "std_us": 4.762,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.615,
+       "max_us": 11.561,
+       "std_us": 0.33,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.685,
+       "max_us": 11.058,
+       "std_us": 0.245,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.269,
+       "max_us": 5.249,
+       "std_us": 0.189,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116237,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 420.0,
+       "max_us": 528.124,
+       "std_us": 18.374,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.411,
+       "max_us": 22.761,
+       "std_us": 0.794,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.183,
+       "std_us": 0.008,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.766,
+       "max_us": 22.128,
+       "std_us": 0.763,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.281,
+       "max_us": 0.407,
+       "std_us": 0.017,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.272,
+       "max_us": 140.667,
+       "std_us": 5.372,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.626,
+       "max_us": 12.027,
+       "std_us": 0.317,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.705,
+       "max_us": 17.651,
+       "std_us": 0.312,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.283,
+       "max_us": 9.503,
+       "std_us": 0.244,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.113609,
+     "iterations_mean": 3.9995,
+     "iterations_std": 0.022355,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 418.213,
+       "max_us": 724.706,
+       "std_us": 17.428,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.323,
+       "max_us": 18.894,
+       "std_us": 0.609,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.182,
+       "std_us": 0.007,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.682,
+       "max_us": 18.135,
+       "std_us": 0.586,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.279,
+       "max_us": 0.394,
+       "std_us": 0.014,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.011,
+       "max_us": 178.109,
+       "std_us": 4.827,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.605,
+       "max_us": 14.923,
+       "std_us": 0.337,
+       "count": 9999
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.685,
+       "max_us": 31.788,
+       "std_us": 0.394,
+       "count": 9999
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.264,
+       "max_us": 8.091,
+       "std_us": 0.226,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.5,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.110868,
+     "iterations_mean": 3.996,
+     "iterations_std": 0.063119,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 419.129,
+       "max_us": 835.521,
+       "std_us": 20.408,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.402,
+       "max_us": 18.445,
+       "std_us": 0.741,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 1.056,
+       "std_us": 0.023,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.757,
+       "max_us": 17.75,
+       "std_us": 0.71,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.282,
+       "max_us": 0.676,
+       "std_us": 0.021,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.07,
+       "max_us": 130.989,
+       "std_us": 4.762,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.601,
+       "max_us": 14.333,
+       "std_us": 0.329,
+       "count": 9992
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.681,
+       "max_us": 27.746,
+       "std_us": 0.33,
+       "count": 9992
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.263,
+       "max_us": 5.469,
+       "std_us": 0.186,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.6,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.108218,
+     "iterations_mean": 3.982,
+     "iterations_std": 0.132951,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 419.234,
+       "max_us": 3222.605,
+       "std_us": 65.428,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.328,
+       "max_us": 66.015,
+       "std_us": 1.33,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 2.023,
+       "std_us": 0.045,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.688,
+       "max_us": 62.792,
+       "std_us": 1.267,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.28,
+       "max_us": 1.454,
+       "std_us": 0.031,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.565,
+       "max_us": 1148.369,
+       "std_us": 24.155,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.621,
+       "max_us": 42.774,
+       "std_us": 0.918,
+       "count": 9964
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.701,
+       "max_us": 45.2,
+       "std_us": 0.935,
+       "count": 9964
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.289,
+       "max_us": 38.645,
+       "std_us": 0.842,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 17,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 10.008717282998987,
+   "freq_khz_before": "4893464",
+   "freq_khz_after": "4892844",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.0395,
+     "errors": 79,
+     "trials": 2000,
+     "ber": 5e-06,
+     "uncoded_ber": 0.124383,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 429.068,
+       "max_us": 571.717,
+       "std_us": 23.984,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.761,
+       "max_us": 28.365,
+       "std_us": 5.22,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.137,
+       "max_us": 0.231,
+       "std_us": 0.011,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.106,
+       "max_us": 25.924,
+       "std_us": 5.087,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.275,
+       "max_us": 0.793,
+       "std_us": 0.027,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.387,
+       "max_us": 137.718,
+       "std_us": 6.23,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.681,
+       "max_us": 11.534,
+       "std_us": 0.35,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.828,
+       "max_us": 7.66,
+       "std_us": 0.282,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.462,
+       "max_us": 5.965,
+       "std_us": 0.24,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.007,
+     "errors": 14,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121661,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 427.485,
+       "max_us": 818.265,
+       "std_us": 25.375,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.606,
+       "max_us": 30.454,
+       "std_us": 1.014,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.137,
+       "max_us": 0.22,
+       "std_us": 0.011,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.96,
+       "max_us": 29.787,
+       "std_us": 0.98,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.272,
+       "max_us": 0.443,
+       "std_us": 0.02,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.352,
+       "max_us": 142.767,
+       "std_us": 6.124,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.664,
+       "max_us": 11.698,
+       "std_us": 0.333,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.823,
+       "max_us": 49.582,
+       "std_us": 0.558,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.456,
+       "max_us": 8.076,
+       "std_us": 0.271,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.0025,
+     "errors": 5,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118946,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 423.581,
+       "max_us": 3654.848,
+       "std_us": 74.682,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.392,
+       "max_us": 56.099,
+       "std_us": 1.182,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 1.935,
+       "std_us": 0.042,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.759,
+       "max_us": 53.526,
+       "std_us": 1.132,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.269,
+       "max_us": 1.18,
+       "std_us": 0.025,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.19,
+       "max_us": 233.687,
+       "std_us": 5.334,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.61,
+       "max_us": 13.664,
+       "std_us": 0.32,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.764,
+       "max_us": 13.244,
+       "std_us": 0.291,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.408,
+       "max_us": 8.498,
+       "std_us": 0.248,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.002,
+     "errors": 4,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116183,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 422.948,
+       "max_us": 990.88,
+       "std_us": 21.232,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.397,
+       "max_us": 20.103,
+       "std_us": 0.705,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.21,
+       "std_us": 0.008,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.769,
+       "max_us": 19.495,
+       "std_us": 0.681,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.269,
+       "max_us": 0.586,
+       "std_us": 0.017,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.948,
+       "max_us": 130.01,
+       "std_us": 4.947,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.625,
+       "max_us": 13.88,
+       "std_us": 0.33,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.778,
+       "max_us": 9.579,
+       "std_us": 0.256,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.42,
+       "max_us": 16.23,
+       "std_us": 0.345,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.113662,
+     "iterations_mean": 3.999,
+     "iterations_std": 0.031607,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 423.009,
+       "max_us": 573.352,
+       "std_us": 19.888,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.461,
+       "max_us": 19.065,
+       "std_us": 0.79,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.191,
+       "std_us": 0.009,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.831,
+       "max_us": 18.475,
+       "std_us": 0.757,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.271,
+       "max_us": 2.765,
+       "std_us": 0.058,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 96.118,
+       "max_us": 137.594,
+       "std_us": 5.338,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.618,
+       "max_us": 9.352,
+       "std_us": 0.3,
+       "count": 9998
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.779,
+       "max_us": 11.755,
+       "std_us": 0.287,
+       "count": 9998
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.423,
+       "max_us": 13.722,
+       "std_us": 0.324,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 18,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 9.974192240002594,
+   "freq_khz_before": "4892844",
+   "freq_khz_after": "4900000",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.034,
+     "errors": 68,
+     "trials": 2000,
+     "ber": 4e-06,
+     "uncoded_ber": 0.124399,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 430.173,
+       "max_us": 2454.275,
+       "std_us": 52.713,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.809,
+       "max_us": 29.209,
+       "std_us": 4.696,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.14,
+       "max_us": 0.287,
+       "std_us": 0.015,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.146,
+       "max_us": 27.766,
+       "std_us": 4.566,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.283,
+       "max_us": 3.466,
+       "std_us": 0.082,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.528,
+       "max_us": 184.626,
+       "std_us": 7.038,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.677,
+       "max_us": 9.216,
+       "std_us": 0.376,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.76,
+       "max_us": 30.153,
+       "std_us": 0.456,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.335,
+       "max_us": 7.097,
+       "std_us": 0.286,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.0105,
+     "errors": 21,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121737,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 423.115,
+       "max_us": 549.577,
+       "std_us": 18.551,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.529,
+       "max_us": 24.05,
+       "std_us": 0.912,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.137,
+       "max_us": 0.257,
+       "std_us": 0.01,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.88,
+       "max_us": 23.352,
+       "std_us": 0.881,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.276,
+       "max_us": 0.682,
+       "std_us": 0.022,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.396,
+       "max_us": 140.279,
+       "std_us": 5.201,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.62,
+       "max_us": 14.333,
+       "std_us": 0.317,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.709,
+       "max_us": 12.755,
+       "std_us": 0.299,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.291,
+       "max_us": 8.786,
+       "std_us": 0.258,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.003,
+     "errors": 6,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118972,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 420.636,
+       "max_us": 1211.839,
+       "std_us": 25.528,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.411,
+       "max_us": 29.894,
+       "std_us": 0.858,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.221,
+       "std_us": 0.008,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.773,
+       "max_us": 29.244,
+       "std_us": 0.836,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.273,
+       "max_us": 0.418,
+       "std_us": 0.015,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.266,
+       "max_us": 197.279,
+       "std_us": 4.917,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.606,
+       "max_us": 23.403,
+       "std_us": 0.398,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.689,
+       "max_us": 23.059,
+       "std_us": 0.349,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.274,
+       "max_us": 11.245,
+       "std_us": 0.258,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.0005,
+     "errors": 1,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116257,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 422.445,
+       "max_us": 858.981,
+       "std_us": 19.686,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.398,
+       "max_us": 21.891,
+       "std_us": 0.749,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.181,
+       "std_us": 0.008,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.761,
+       "max_us": 20.216,
+       "std_us": 0.685,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.277,
+       "max_us": 8.978,
+       "std_us": 0.195,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.743,
+       "max_us": 127.196,
+       "std_us": 4.514,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.607,
+       "max_us": 12.587,
+       "std_us": 0.297,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.693,
+       "max_us": 17.139,
+       "std_us": 0.265,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.273,
+       "max_us": 6.012,
+       "std_us": 0.18,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.113557,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 419.996,
+       "max_us": 554.577,
+       "std_us": 14.543,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.346,
+       "max_us": 23.55,
+       "std_us": 0.639,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.194,
+       "std_us": 0.008,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.719,
+       "max_us": 22.857,
+       "std_us": 0.612,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.273,
+       "max_us": 1.285,
+       "std_us": 0.026,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.527,
+       "max_us": 137.205,
+       "std_us": 4.017,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.591,
+       "max_us": 9.709,
+       "std_us": 0.262,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.675,
+       "max_us": 12.873,
+       "std_us": 0.202,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.267,
+       "max_us": 5.426,
+       "std_us": 0.175,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  },
+  {
+   "run": 19,
+   "discarded": false,
+   "returncode": 0,
+   "wall_s": 9.99333102699893,
+   "freq_khz_before": "4900000",
+   "freq_khz_after": "4899950",
+   "blocks": [
+    {
+     "snr": 3.0,
+     "bler": 0.031,
+     "errors": 62,
+     "trials": 2000,
+     "ber": 4e-06,
+     "uncoded_ber": 0.124423,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 423.922,
+       "max_us": 826.162,
+       "std_us": 24.36,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.725,
+       "max_us": 26.858,
+       "std_us": 5.053,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 1.163,
+       "std_us": 0.026,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 13.082,
+       "max_us": 25.624,
+       "std_us": 4.923,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.284,
+       "max_us": 1.358,
+       "std_us": 0.037,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.206,
+       "max_us": 190.231,
+       "std_us": 6.472,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.659,
+       "max_us": 14.602,
+       "std_us": 0.376,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.781,
+       "max_us": 8.996,
+       "std_us": 0.308,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.268,
+       "max_us": 10.755,
+       "std_us": 0.306,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.1,
+     "bler": 0.01,
+     "errors": 20,
+     "trials": 2000,
+     "ber": 1e-06,
+     "uncoded_ber": 0.121661,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 424.473,
+       "max_us": 568.948,
+       "std_us": 21.221,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.535,
+       "max_us": 35.18,
+       "std_us": 0.972,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.189,
+       "std_us": 0.008,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.906,
+       "max_us": 34.537,
+       "std_us": 0.942,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.281,
+       "max_us": 1.286,
+       "std_us": 0.029,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.874,
+       "max_us": 155.622,
+       "std_us": 5.58,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.64,
+       "max_us": 8.627,
+       "std_us": 0.325,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.762,
+       "max_us": 36.547,
+       "std_us": 0.412,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.244,
+       "max_us": 6.567,
+       "std_us": 0.228,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.2,
+     "bler": 0.002,
+     "errors": 4,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.118985,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 425.5,
+       "max_us": 593.872,
+       "std_us": 26.639,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.626,
+       "max_us": 21.714,
+       "std_us": 1.008,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.35,
+       "std_us": 0.012,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.99,
+       "max_us": 20.858,
+       "std_us": 0.966,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.283,
+       "max_us": 3.524,
+       "std_us": 0.076,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.92,
+       "max_us": 141.428,
+       "std_us": 6.7,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.666,
+       "max_us": 11.321,
+       "std_us": 0.38,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.792,
+       "max_us": 23.886,
+       "std_us": 0.37,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.269,
+       "max_us": 9.617,
+       "std_us": 0.285,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.3,
+     "bler": 0.001,
+     "errors": 2,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.116217,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 424.594,
+       "max_us": 681.24,
+       "std_us": 25.466,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.591,
+       "max_us": 82.729,
+       "std_us": 1.893,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.135,
+       "max_us": 0.839,
+       "std_us": 0.018,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.96,
+       "max_us": 78.756,
+       "std_us": 1.814,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.282,
+       "max_us": 1.776,
+       "std_us": 0.039,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 95.614,
+       "max_us": 162.157,
+       "std_us": 6.428,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.639,
+       "max_us": 10.412,
+       "std_us": 0.337,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.767,
+       "max_us": 8.732,
+       "std_us": 0.282,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.251,
+       "max_us": 13.255,
+       "std_us": 0.322,
+       "count": 2000
+      }
+     }
+    },
+    {
+     "snr": 3.4,
+     "bler": 0.0,
+     "errors": 0,
+     "trials": 2000,
+     "ber": 0.0,
+     "uncoded_ber": 0.113535,
+     "iterations_mean": 4.0,
+     "iterations_std": 0.0,
+     "iterations_max": 4.0,
+     "timers": {
+      "ldpc_encoder": {
+       "mean_us": 418.845,
+       "max_us": 539.961,
+       "std_us": 15.548,
+       "count": 2000
+      },
+      "ldpc_encoder_optim": {
+       "mean_us": 13.47,
+       "max_us": 27.684,
+       "std_us": 0.838,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(input)": {
+       "mean_us": 0.134,
+       "max_us": 0.193,
+       "std_us": 0.008,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(parity)": {
+       "mean_us": 12.841,
+       "max_us": 27.075,
+       "std_us": 0.799,
+       "count": 2000
+      },
+      "ldpc_encoder_optim(output)": {
+       "mean_us": 0.283,
+       "max_us": 4.983,
+       "std_us": 0.138,
+       "count": 2000
+      },
+      "ldpc_decoder": {
+       "mean_us": 94.65,
+       "max_us": 130.298,
+       "std_us": 4.076,
+       "count": 2000
+      },
+      "cnProc (per iteration)": {
+       "mean_us": 3.591,
+       "max_us": 12.04,
+       "std_us": 0.304,
+       "count": 10000
+      },
+      "cn2bnProcBuf (per iteration)": {
+       "mean_us": 3.723,
+       "max_us": 32.48,
+       "std_us": 0.371,
+       "count": 10000
+      },
+      "bn2cnProcBuf (per iteration)": {
+       "mean_us": 3.209,
+       "max_us": 6.678,
+       "std_us": 0.165,
+       "count": 2000
+      }
+     }
+    }
+   ],
+   "parse_warnings": []
+  }
+ ]
+}
