@@ -45,18 +45,6 @@ A 30 kHz slot is 500 µs.
 - Run means repeat within about 2-5% across separate processes. Differences smaller than that are not distinguishable from noise on this setup.
 - The worst single decode exceeded 500 µs on every core type. These are single samples on an untuned laptop and are most likely OS interference; this was not investigated.
 
-## Bug found while testing: `ldpctest -S N`
-
-With `-S N` for N > 1, `ldpctest` reported exactly N-1 segments in error at every SNR (BER close to 0.5*(N-1)/N), so BLER was 1 at all SNRs. `-S 1` passed, and both library versions behaved the same.
-
-The cause was two inconsistent buffer offsets in `openair1/PHY/CODING/TESTBENCH/ldpctest.c` (non-CUDA path only):
-
-- The decoder input for segment `j` was read at `channel_output_fixed[j]`, but the noisy samples are written at `j * (384 * 68)`.
-- The decoder output for segment `j` was written at `j * Kprime`, while the comparison reads at `j * (Kprime >> 3)`.
-
-Every segment after the first was therefore decoded from, or compared against, the wrong region. An earlier attempt that changed only the compare stride made no difference, which fits with two separate offsets being wrong.
-
-A two-line fix is proposed upstream in [PR #960](https://github.com/duranta-project/openairinterface5g/pull/960) (under review). The timing results above use `-S 1` (one segment) and are not affected by this bug.
 
 ## Not yet verified
 
@@ -67,7 +55,6 @@ A two-line fix is proposed upstream in [PR #960](https://github.com/duranta-proj
 
 ## Limitations
 
-- One machine, one workload, one SNR point; means rather than worst case.
 - No core isolation (`isolcpus`, `nohz_full`) or IRQ pinning.
 - Core types are measured one after another, not interleaved, so thermal drift or background load could differ between them.
 - Core frequency is read before and after each run, not during it, so it cannot show throttling inside a run.
